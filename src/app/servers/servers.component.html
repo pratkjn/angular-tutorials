@@ -1,4 +1,8 @@
-<button class="btn btn-primary" [disabled]="!allowNewServer" (click)='onCreateSever()' onclick="console.log('in onclick');">Add Me</button>
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)='onCreateSever()'
+    onclick="console.log('in onclick')">Add Me</button>
+
+<input (input)="onUpdateServerName($event)" class="form-input" />
+<p>{{serverName}}</p>
 <p>{{serverCreationStatus}}</p>
 <app-server></app-server>
 <app-server></app-server>
