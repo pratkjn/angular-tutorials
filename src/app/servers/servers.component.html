@@ -3,7 +3,9 @@
 
 <!-- <input (input)="onUpdateServerName($event)" class="form-control" /> -->
 <input class="form-control" [(ngModel)]="serverName" />
-<p>{{serverName}}</p>
-<p>{{serverCreationStatus}}</p>
+<p *ngIf="serverCreated; else noServer">Server is created {{serverName}}</p>
+<ng-template #noServer>
+    <p>{{serverCreationStatus}}</p>
+</ng-template>
 <app-server></app-server>
 <app-server></app-server>
