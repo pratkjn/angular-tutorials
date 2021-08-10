@@ -15,22 +15,22 @@ import { DropdownDirective } from './shared/dropdown.directive';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    RecipesComponent,
-    RecipeListComponent,
-    RecipeDetailComponent,
-    RecipeItemComponent,
-    ShoppingListComponent,
-    ShoppingEditComponent,
-    DropdownDirective
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-  ],
-  providers: [ShoppingListService],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		HeaderComponent,
+		RecipesComponent,
+		RecipeListComponent,
+		RecipeDetailComponent,
+		RecipeItemComponent,
+		ShoppingListComponent,
+		ShoppingEditComponent,
+		DropdownDirective
+	],
+	imports: [
+		BrowserModule,
+		FormsModule,
+	],
+	providers: [ShoppingListService],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
